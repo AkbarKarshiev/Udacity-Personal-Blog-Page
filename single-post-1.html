@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        
+        <title>My Personal Blog Page</title>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <img src="img/logo.png" alt="trillo logo" class="logo">
+                <div class="main-title">
+                    <h2>Personal Blog Page</h2>
+                </div>
+                <nav class="user-nav">
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-chat"></use>
+                        </svg>
+                        <span class="user-nav__notification">13</span>
+                    </div>
+                    <div class="user-nav__user">
+                        <img src="img/user.jpg" alt="User user-nav__user-photo" class="user-nav__user-photo">
+                        <span class="user-nav__user-name">Akbar</span>
+                    </div>
+                </nav>
+            </header>
+            <nav class="sidebar">
+                <ul class="side-nav">
+                    <li class="side-nav__item">
+                        <a href="index.html" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="img/sprite.svg#icon-home"></use>
+                            </svg>
+                            <span>Home</span>
+                        </a>                            
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <!-- <img class="side-nav__icon" src="img/SVG/file-text.svg" alt="asas"> -->
+                            <svg class="side-nav__icon">
+                                <use xlink:href="img/sprite.svg#file-text"></use>
+                            </svg>
+                            <span>Recent Posts</span>
+                        </a>                          
+                    </li>
+                </ul>
+                <div class="legal">
+                    &copy; 2019 Funny Blog
+                </div>
+            </nav>
+            <div class="content">
+                <main class="main-content">
+                    <div class="heading">
+                        <a class="btn-inline go-back" href="recent-posts.html">Go Back</a>
+                        <h1 class="heading__title">
+                            Post 1
+                        </h1>
+                    </div>
+                    <div class="detail">
+                        <div class="description">
+                            <h1 style="text-align: center; margin-bottom: 20px;">Some topic</h1>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur distinctio necessitatibus pariatur voluptatibus. Quidem consequatur harum volupta!
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur distinctio necessitatibus pariatur voluptatibus. Quidem consequatur harum volupta!
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur distinctio necessitatibus pariatur voluptatibus. Quidem consequatur harum volupta!
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur distinctio necessitatibus pariatur voluptatibus. Quidem consequatur harum volupta!
+                            </p>
+                        </div>
+                        <div class="user-reviews">
+                            <figure class="review">
+                                <blockquote class="review__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi, totam, itaque officia ex.
+                                </blockquote>
+                                <figcaption class="review__user">
+                                    <img src="img/user-1.jpg" alt="User 1" class="review__photo">
+                                    <div class="review__user-box">
+                                        <p class="review__user-name">Nick Smith</p>
+                                        <p class="review__user-date">Feb 23rd, 2020</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                            <figure class="review">
+                                <blockquote class="review__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi.
+                                </blockquote>
+                                <figcaption class="review__user">
+                                    <img src="img/user-2.jpg" alt="User 1" class="review__photo">
+                                    <div class="review__user-box">
+                                        <p class="review__user-name">Mary Thomas</p>
+                                        <p class="review__user-date">Jan 13rd, 2020</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+
+                            <button class="btn-inline">Show all <span>&rarr;</span></button>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <h2 class="footer__text">
+                            This is the Footer
+                        </h2>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </body>
+</html>

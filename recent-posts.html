@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        
+        <title>My Personal Blog Page</title>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <img src="img/logo.png" alt="trillo logo" class="logo">
+                <div class="main-title">
+                    <h2>Personal Blog Page</h2>
+                </div>
+                <nav class="user-nav">
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-chat"></use>
+                        </svg>
+                        <span class="user-nav__notification">13</span>
+                    </div>
+                    <div class="user-nav__user">
+                        <img src="img/user.jpg" alt="User user-nav__user-photo" class="user-nav__user-photo">
+                        <span class="user-nav__user-name">Akbar</span>
+                    </div>
+                </nav>
+            </header>
+            <nav class="sidebar">
+                <ul class="side-nav">
+                    <li class="side-nav__item">
+                        <a href="index.html" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="img/sprite.svg#icon-home"></use>
+                            </svg>
+                            <span>Home</span>
+                        </a>                            
+                    </li>
+                    <li class="side-nav__item side-nav__item--active">
+                        <a href="#" class="side-nav__link">
+                            <!-- <img class="side-nav__icon" src="img/SVG/file-text.svg" alt="asas"> -->
+                            <svg class="side-nav__icon">
+                                <use xlink:href="img/sprite.svg#file-text"></use>
+                            </svg>
+                            <span>Recent Posts</span>
+                        </a>                          
+                    </li>
+                </ul>
+                <div class="legal">
+                    &copy; 2019 Funny Blog
+                </div>
+            </nav>
+            <div class="content">
+                <main class="main-content">
+                    <div class="heading">
+                        <h1 class="heading__title">
+                            Recently Published Posts
+                        </h1>
+                    </div>
+                    <div class="detail">
+                        <section class="posts">
+                            <div class="post">
+                                <img src="img/house.jpeg" alt="House" class="post__img"> 
+                               
+                                <h5 class="post__name">Post 1</h5>
+                                <p class="post__text">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur distinctio necessitatibus pariatur voluptatibus. Quidem consequatur harum volupta!
+                                </p>
+                                <a class="btn post__btn" href="single-post-1.html">Read more...</a>
+                            </div>
+                            <div class="post">
+                                <img src="img/camera.jpg" alt="Camera" class="post__img"> 
+                               
+                                <h5 class="post__name">Post 2</h5>
+                                <p class="post__text">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur distinctio necessitatibus pariatur voluptatibus. Quidem consequatur harum volupta!
+                                </p>
+                                <a class="btn post__btn" href="single-post-2.html">Read more...</a>
+                            </div>
+                            <div class="post">
+                                <img src="img/studio.jpg" alt="Studio" class="post__img"> 
+                               
+                                <h5 class="post__name">Post 3</h5>
+                                <p class="post__text">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur distinctio necessitatibus pariatur voluptatibus. Quidem consequatur harum volupta!
+                                </p>
+                                <a class="btn post__btn" href="single-post-3.html">Read more...</a>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="footer">
+                        <h2 class="footer__text">
+                            This is the Footer
+                        </h2>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </body>
+</html>

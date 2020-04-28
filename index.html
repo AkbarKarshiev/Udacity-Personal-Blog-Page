@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        
+        <title>My Personal Blog Page</title>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <img src="img/logo.png" alt="trillo logo" class="logo">
+                <div class="main-title">
+                    <h2>Personal Blog Page</h2>
+                </div>
+                <nav class="user-nav">
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-chat"></use>
+                        </svg>
+                        <span class="user-nav__notification">13</span>
+                    </div>
+                    <div class="user-nav__user">
+                        <img src="img/user.jpg" alt="User user-nav__user-photo" class="user-nav__user-photo">
+                        <span class="user-nav__user-name">Akbar</span>
+                    </div>
+                </nav>
+            </header>
+            <nav class="sidebar">
+                <ul class="side-nav">
+                    <li class="side-nav__item side-nav__item--active">
+                        <a href="index.html" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="img/sprite.svg#icon-home"></use>
+                            </svg>
+                            <span>Home</span>
+                        </a>                            
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="recent-posts.html" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="img/sprite.svg#file-text"></use>
+                            </svg>
+                            <span>Recent Posts</span>
+                        </a>                          
+                    </li>
+                </ul>
+                <div class="legal">
+                    &copy; 2019 Funny Blog
+                </div>
+            </nav>
+            <div class="content">
+                <main class="main-content">
+                    <div class="gallery">
+                        <figure class="gallery__item">
+                            <img src="img/tablet.jpg" alt="tablet" class="gallery__photo">
+                        </figure>
+                        <figure class="gallery__item">
+                            <img src="img/background.jpg" alt="background" class="gallery__photo">
+                        </figure>
+                        <figure class="gallery__item">
+                            <img src="img/road.jpg" alt="road" class="gallery__photo">
+                        </figure>
+                    </div>
+
+                    <div class="heading">
+                        <h1 class="heading__title">
+                            About Myself
+                        </h1>
+                        <div class="heading__mail">
+                            <svg class="heading__icon-mail">
+                                <use xlink:href="img/sprite.svg#mail"></use>
+                            </svg>
+                            <button class="btn-inline">akbar.karshiev.97@gmail.com</button>
+                        </div>
+
+                        <div class="heading__github">
+                            <svg class="heading__icon-github">
+                                <use xlink:href="img/sprite.svg#github"></use>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="detail">
+                        <div class="description no-flex m-0">
+                            <p class="paragraph">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nisi dignissimos debitis ratione sapiente saepe. Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate.
+                            </p>
+                            <p class="paragraph">
+                                Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate delectus, inventore iure aliquid aliquam.
+                            </p>
+                            <div class="features">
+                                <h4 style="margin-bottom: 10px;">Technical Skills</h4>
+                                <ul class="list">
+                                    <li class="list__item">HTML + CSS (SCSS)</li>
+                                    <li class="list__item">JS (ES5/ES6)</li>
+                                    <li class="list__item">ReactJS</li>
+                                    <li class="list__item">Webpack</li>
+                                    <li class="list__item">NPM</li>
+                                    <li class="list__item">Git, GitHub, BitBucket</li>
+                                    <li class="list__item">NodeJS</li>
+                                    <li class="list__item">etc.</li>
+                                </ul>
+                            </div>
+                           
+                            <div class="recommend">
+                                <p class="recommend__count">
+                                    Lucy and 3 other friends endorsed my skills.
+                                </p>
+                                <div class="recommend__friends">
+                                    <img src="img/user-3.jpg" alt="Friend 1" class="recommend__photo">
+                                    <img src="img/user-4.jpg" alt="Friend 2" class="recommend__photo">
+                                    <img src="img/user-5.jpg" alt="Friend 3" class="recommend__photo">
+                                    <img src="img/user-6.jpg" alt="Friend 4" class="recommend__photo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <h2 class="footer__text">
+                            This is the Footer
+                        </h2>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </body>
+</html>
