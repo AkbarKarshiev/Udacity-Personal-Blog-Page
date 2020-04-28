@@ -9,14 +9,19 @@
     display: grid;
     grid-template-rows: 7rem min-content;
     grid-template-columns: [sidebar-start] 20rem [sidebar-end full-start] 1fr [full-end];
+}
 
-    @media only screen and (max-width: $bp-largest) {
+
+@media only screen and (max-width: 75em) {
+    .container {
         margin: 0;
         max-width: 100%;
         width: 100%;
     }
+}
 
-    @media only screen and (max-width: $bp-medium) {
+@media only screen and (max-width: 56.25em) {
+    .container {
         grid-template-rows: 11rem min-content min-content;
         grid-template-columns: [sidebar-start] 20rem [sidebar-end full-start] 1fr [full-end];
     }
@@ -31,8 +36,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
 
-    @media only screen and (max-width: $bp-smallest) {
+@media only screen and (max-width: 31.25em) {
+    .header {
         flex-wrap: wrap;
         align-content: space-around;
         height: 11rem;
@@ -42,19 +49,18 @@
 .content {
     display: flex;
     grid-column: full-start / full-end;
+}
 
-    @media only screen and (max-width: $bp-medium) {
+@media only screen and (max-width: 56.25em) {
+    .content {
         flex-direction: column;
         grid-column: sidebar-start / full-end;
     }
+
 }
 
 .sidebar {
     grid-column: sidebar-start / sidebar-end;
-
-    @media only screen and (max-width: $bp-medium) {
-        grid-column: sidebar-start / full-end;
-    }
 
     background-color: var(--color-grey-dark-1);
 
@@ -63,6 +69,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+@media only screen and (max-width: 56.25em) {
+    .sidebar {
+        grid-column: sidebar-start / full-end;
+    }
 }
 
 .main-content {
@@ -77,12 +89,16 @@
     padding: 4.5rem;
     background-color: var(--color-grey-light-1);
     border-bottom: var(--line);
+}
 
-    @media only screen and (max-width: $bp-medium) {
+@media only screen and (max-width: 56.25em) {
+    .detail {
         padding: 3rem;
     }
+}
 
-    @media only screen and (max-width: $bp-small) {
+@media only screen and (max-width: 37.5em) {
+    .detail {
         flex-direction: column;
     }
 }
@@ -93,13 +109,17 @@
     padding: 3rem;
     flex: 0 0 60%;
     margin-right: 4.5rem;
+}
 
-    @media only screen and (max-width: $bp-medium) {
+@media only screen and (max-width: 56.25em) {
+    .description {
         padding: 2rem;
         margin-right: 3rem;
     }
+}
 
-    @media only screen and (max-width: $bp-small) {
+@media only screen and (max-width: 37.5em) {
+    .description {
         margin-right: 0;
         margin-bottom: 3rem;
     }
